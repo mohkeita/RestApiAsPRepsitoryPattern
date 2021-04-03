@@ -5,4 +5,18 @@
   </PropertyGroup>
 
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RestApiAsPRepositoryPattern.Services\RestApiAsPRepositoryPattern.Services.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\RestApiAsPRepositoryPattern.Domain\RestApiAsPRepositoryPattern.Domain.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\RestApiAsPRepositoryPattern.DAL.Dapper\RestApiAsPRepositoryPattern.DAL.Dapper.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

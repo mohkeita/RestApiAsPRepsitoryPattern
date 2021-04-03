@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.809.2
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApiAsPRepsitoryPattern", "RestApiAsPRepsitoryPattern\RestApiAsPRepsitoryPattern.csproj", "{E85452E9-5F0C-4356-98AC-FF7C0C45E392}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApiAsPRepositoryPattern.Domain", "RestApiAsPRepositoryPattern.Domain\RestApiAsPRepositoryPattern.Domain.csproj", "{3DD5BF68-E5EE-4A28-9356-5D399FC7CAC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApiAsPRepositoryPattern.DAL.Dapper", "RestApiAsPRepositoryPattern.DAL.Dapper\RestApiAsPRepositoryPattern.DAL.Dapper.csproj", "{BBE6C77E-7568-43C8-A732-4A49B0B76321}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApiAsPRepositoryPattern.Services", "RestApiAsPRepositoryPattern.Services\RestApiAsPRepositoryPattern.Services.csproj", "{C9344B55-311B-40C7-971D-CE962AC1926D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{E85452E9-5F0C-4356-98AC-FF7C0C45E392}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E85452E9-5F0C-4356-98AC-FF7C0C45E392}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E85452E9-5F0C-4356-98AC-FF7C0C45E392}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DD5BF68-E5EE-4A28-9356-5D399FC7CAC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DD5BF68-E5EE-4A28-9356-5D399FC7CAC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DD5BF68-E5EE-4A28-9356-5D399FC7CAC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DD5BF68-E5EE-4A28-9356-5D399FC7CAC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBE6C77E-7568-43C8-A732-4A49B0B76321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE6C77E-7568-43C8-A732-4A49B0B76321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE6C77E-7568-43C8-A732-4A49B0B76321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE6C77E-7568-43C8-A732-4A49B0B76321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9344B55-311B-40C7-971D-CE962AC1926D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9344B55-311B-40C7-971D-CE962AC1926D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9344B55-311B-40C7-971D-CE962AC1926D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9344B55-311B-40C7-971D-CE962AC1926D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
