@@ -11,7 +11,7 @@ namespace RestApiAsPRepositoryPattern.DAL.Dapper.Repositories
 {
     public class DeveloperRepository : IDeveloperRepository
     {
-        protected readonly IConfiguration _config;
+        private readonly IConfiguration _config;
 
         public DeveloperRepository(IConfiguration config)
         {
@@ -50,7 +50,7 @@ namespace RestApiAsPRepositoryPattern.DAL.Dapper.Repositories
                 using (IDbConnection dbConnection = Connection)
                 {
                     dbConnection.Open();
-                    string query = @"SELECT * FROM Developers WHERE Id = @id;";
+                    string query = @"SELECT * FROM Developers WHERE Id=@id;";
                     return await dbConnection.QueryFirstOrDefaultAsync<Developer>(query, new { Id=id });
                 }
             }
@@ -67,7 +67,7 @@ namespace RestApiAsPRepositoryPattern.DAL.Dapper.Repositories
                 using (IDbConnection dbConnection = Connection)
                 {
                     dbConnection.Open();
-                    string query = @"SELECT * FROM Developers WHERE Email = @Email;";
+                    string query = @"SELECT * FROM Developers WHERE Email=@Email;";
                     return await dbConnection.QueryFirstOrDefaultAsync<Developer>(query, new { Email=email });
                 }
             }
@@ -118,7 +118,7 @@ namespace RestApiAsPRepositoryPattern.DAL.Dapper.Repositories
                 using (IDbConnection dbConnection = Connection)
                 {
                     dbConnection.Open();
-                    string query = @"DELETE FROM Developers WHERE Id = @id;";
+                    string query = @"DELETE FROM Developers WHERE Id=@id;";
                     dbConnection.Execute(query, new {Id = id});
                 }
             }

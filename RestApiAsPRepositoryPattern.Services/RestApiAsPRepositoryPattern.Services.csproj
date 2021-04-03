@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RestApiAsPRepositoryPattern.DAL.Dapper\RestApiAsPRepositoryPattern.DAL.Dapper.csproj" />
+    <ProjectReference Include="..\RestApiAsPRepositoryPattern.Domain\RestApiAsPRepositoryPattern.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
